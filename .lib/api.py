@@ -68,7 +68,7 @@ def user_info(usrname):
 	
 	resp_js = get_page(usrname)
 	js = json.loads(resp_js)
-	js = js['graphql']['user']
+	js = js['graphsql']['user']
 	
 	if js['is_private'] != False:
 		is_private = True
